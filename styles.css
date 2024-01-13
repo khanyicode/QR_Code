@@ -1,7 +1,8 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4; /* Light background color */
 }
 
 .grid {
@@ -12,16 +13,34 @@ body {
 }
 
 h2 {
-    color: #333;
+    color: #3498db; /* Highlight color */
+    font-size: 24px;
+    margin-bottom: 15px;
 }
 
 select {
-    padding: 8px;
-    font-size: 16px;
+    padding: 10px;
+    font-size: 18px;
     margin-top: 10px;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    background-color: #ecf0f1;
+    transition: border-color 0.3s ease; 
+}
+
+select:hover,
+select:focus {
+    border-color: #2980b9; 
 }
 
 img {
     margin-top: 20px;
     max-width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.3s ease; 
+}
+
+img:hover {
+    transform: scale(1.05); 
 }
